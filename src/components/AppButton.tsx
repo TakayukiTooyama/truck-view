@@ -6,8 +6,6 @@ export type AppButtonPropsType = {
   onPress: () => void;
 };
 
-const AppButton: VFC<AppButtonPropsType> = ({ title, onPress }: AppButtonPropsType) => (
+export const AppButton: VFC<AppButtonPropsType> = ({ title, onPress }: AppButtonPropsType) => (
   <Button title={title} onPress={onPress} />
 );
-
-export default AppButton;
